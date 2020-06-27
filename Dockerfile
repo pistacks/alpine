@@ -1,2 +1,4 @@
 FROM scratch
-ADD alpine-minirootfs-3.10.1-armv7.tar.gz /
+ARG VERSION
+ENV VERSION $VERSION
+ADD alpine-minirootfs-$VERSION-armv7.tar.gz /
